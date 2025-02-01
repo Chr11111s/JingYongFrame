@@ -1,0 +1,1097 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{a89c3b7e-3d84-e6b1-d13a-f86c55b46c99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_32;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_CLOUD_FEATURES;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;UNITY_POST_PROCESSING_STACK_V2;AMPLIFY_SHADER_EDITOR;ODIN_INSPECTOR;GAIA_PRESENT;ODIN_INSPECTOR_3;GPU_INSTANCER;STEAMWORKS_NET;HOTFIX_ENABLE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;HSFRAMEWORK_NET_ABOVE_4_5;UNITASK_ADDRESSABLE_SUPPORT;NET_STANDARD_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ColorHSVPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\MenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Styles\StyleSelectablePropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\SpinnerEditor.cs" />
+     <Compile Include="Assets\Plugins\3rd\Reporter\Editor\ReporterEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\DataBindSupport\MenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ResizableEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Styles\StyleImagePropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Styles\StyleTextPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Editor.Conditions\EditorConditionalUI.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\SpinnerFloatEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3PlayMakerEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Integration\UnityUI\Editor\UnityUISetup.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TMProSupport\ProgressbarTMProEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\CursorsMenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\PrefabGenerator.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TMProSupport\MenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Styles\StyleRangeSliderPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\EasyLayoutEllipseSettingsPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ButtonAdvancedEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\ScriptsGenerator.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\SwitchEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\UnityEditorBridge.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\TreeViewDataSourceWindow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\ClassField.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\Editor\EdgeDetectPostProcessing_Editor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\SettingsWindow.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\TypesWindow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ScrollRectPaginatorEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ConditionalEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ToolsWindow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Styles\StyleMenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\HarborListViewEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3AutoSaveMgrEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TableHeaderEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\AddES3Prefab.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ReferencesWindow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ProgressbarEditor.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\Editor\EdgeDetect_BeforeStack_Editor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\SelectableHelperEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\DragSupportEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Editor.Conditions\EditorConditionalMono.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\ToDoListViewEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\EasyLayoutEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ConditionalFieldInfo.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\AccordionItemDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\UIWidgetsMonoEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\InitializerInspector.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3Postprocessor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\RangeSliderFloatEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\UserDataStore_PlayerPrefsInspector.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\TreeListEditorWindow.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\HardwareJoystickTemplateMapInspector.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Editor\DecalShaderGUI.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\WidgetsGenerationWindow.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3Window.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3InspectorInfoEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\MenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewItemEditor.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Editor\DecalEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3AutoSaveEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\UIWidgetsEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewIconsEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ScriptsRecompile.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\OrderedEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ResizableHeaderEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\ListViewVariableHeightEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\TraderListViewEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\CursorsEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\OverwriteRequestWindow.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3GlobalReferencesEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Editor.Conditions\EditorConditional.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TimeBaseEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3EditorUtility.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\TileViewSampleEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewCustomBaseEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\AssemblyDefinitionsEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ContextMenuEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewGameObjectsEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\HardwareJoystickMapInspector.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\PlayerControllerInspector.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\LayoutSwitcherEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\TreeViewDataSourceEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\InputManagerInspector.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Editor\DecalUtilityWindow.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\AutoSaveWindow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TabIconButtonEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\SplitterEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\ListViewCustomSampleEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TMProSupport\TabIconButtonTMProEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\CustomInspector_External.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TabIconsDrawer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\TreeViewSampleEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\ClassInfo.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListViewPaginatorEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\SteamSpyViewEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\HomeWindow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ThirdPartySupportMenuOptions.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewCustomEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\CenteredSliderEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ConditionalPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\PlayerMouseInspector.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Editor\ListViewUnderlineSampleEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3SettingsEditor.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Editor\CustomInspectors\ControllerDataFilesInspector.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\Styles\StyleEditor.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3ReferenceMgrEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewBaseEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\RangeSliderEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\ListViewCustomHeightEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\TabButtonEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\TreeViewCustomEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ButtonCustomEditor.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\Editor\EdgeDetect_AfterStack_Editor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ContextMenuWindow.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3EditorStyle.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ES3PrefabEditor.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Editor\DecaliciousRendererEditor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ProjectSettings.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Integration\UnityUI\Editor\RewiredStandaloneInputModuleInspector.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ScriptingDefineSymbols.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\Editor\EdgeDetect_BeforeTransparent_Editor.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Editor\ListView\TileViewEditor.cs" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\AutoCombobox.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\TestItem.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\Comparers.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\TreeGraph.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\TreeViewNodeDragSupport.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\TestItemOff.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\ListViewComponent.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Dialogs\PickerTreeView.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\ListViewDropSupport.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\Combobox.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Scene\PrefabGenerator.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\Autocomplete.template.txt" />
+     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ValueTypeTemplate.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\TreeViewComponent.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\TreeGraphComponent.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Scene\PrefabGeneratorAutocomplete.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Scene\PrefabGeneratorTable.template.txt" />
+     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ComponentTypeTemplate.txt" />
+     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3TypeTemplate.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Test.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\TreeViewNodeDropSuppport.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\Tooltip.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\ListView.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\MenuOptions.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\TooltipViewer.template.txt" />
+     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3Type_MaterialTemplate.txt" />
+     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ScriptableObjectTypeTemplate.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Collections\TreeView.template.txt" />
+     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ClassTypeTemplate.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Scene\PrefabGeneratorScene.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\ListViewDragSupport.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Scene\PrefabGeneratorAutocompleteOff.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Scene\PrefabGeneratorTableOff.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\CollectionsSupport\TreeViewDropSupport.template.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Editor\WidgetsGeneration\Templates\Dialogs\PickerListView.template.txt" />
+    <Reference Include="UnityEngine">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AutoStreamingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AutoStreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudFoundationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CloudFoundationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.sharp-zip-lib@a82316d2ab\Runtime\Unity.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Unity.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\Editor\ch.sycoforge.Unity.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Excel\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Runtime\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiEditor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Runtime\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="MTE">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\MeshTerrainEditor\Editor\MTE.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Decal">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Easy Decal\Scripts\ch.sycoforge.Decal.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Editor\Rewired_Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Logging">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\ch.sycoforge.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="JMOAssets">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\VFX\JMO Assets\Editor\JMOAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Facepunch.Steamworks.2.3.2\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="IFix.Core">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\IFix.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Decal.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Easy Decal\Scripts\Editor\ch.sycoforge.Decal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Unity.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\ch.sycoforge.Unity.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Excel\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Imaging">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\Editor\ch.sycoforge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AssetBundleBrowser.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.AssetBundleBrowser.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.quicksearch">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\com.unity.quicksearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Analytics">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib.Utils">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.SharpZipLib.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleFileBrowser.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\SimpleFileBrowser.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2733ad31-b9d9-5da3-9511-9d168bd0bdc2}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="MTE_script.csproj">
+      <Project>{5d919b4b-5b2c-484f-d43d-5866381d2476}</Project>
+      <Name>MTE_script</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
+      <Project>{793cf723-b0a3-4f0c-6f4a-ef30be199157}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.FSM.csproj">
+      <Project>{ff2fee95-49de-e2a0-884b-24a9bb5a22ac}</Project>
+      <Name>Animancer.FSM</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{116b768d-0345-2c1f-3e16-f3c45f617cf2}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.csproj">
+      <Project>{8d5665b0-bdb9-a746-e820-186762f441d5}</Project>
+      <Name>Animancer</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNodeEditor.csproj">
+      <Project>{9699fb2c-2ada-11db-daec-4d87b508b0c6}</Project>
+      <Name>XNodeEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{f38d1597-9f18-b8c3-a4d5-51921b348bf8}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{a2e7720a-d2e3-6571-17b7-c1320d1a900b}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{5872f838-ede7-2e6e-3ccc-51228063ef7a}</Project>
+      <Name>LeanCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{08f43b62-91bb-7a62-1ecb-1c9a864f9b56}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.Examples.csproj">
+      <Project>{5a90fce1-c31a-d8ee-6854-29cad22bd01b}</Project>
+      <Name>Animancer.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
+      <Project>{fa7db092-9cd0-aed2-10b4-2ea3ec235375}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UIWidgets.csproj">
+      <Project>{9c3cfdf0-0437-8bdc-e15b-411acd5e3814}</Project>
+      <Name>UIWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{e4133150-d738-f3d7-8ca5-4363434f33e1}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{588b2e92-ce03-751a-0082-81512b04eb9a}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNode.csproj">
+      <Project>{3fd5232f-3cf9-6abd-ca0d-55fb458bf78f}</Project>
+      <Name>XNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{8c2dd865-d14c-0778-28bf-21be30814f03}</Project>
+      <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanPool.csproj">
+      <Project>{98f5352d-1216-dda7-2d6d-d52b64c1322e}</Project>
+      <Name>LeanPool</Name>
+    </ProjectReference>
+    <ProjectReference Include="Auxiliary.csproj">
+      <Project>{3f269231-ae0d-7844-0f06-154c92e14509}</Project>
+      <Name>Auxiliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{f6060e3b-4355-7338-f087-c4ec5cc4a99d}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

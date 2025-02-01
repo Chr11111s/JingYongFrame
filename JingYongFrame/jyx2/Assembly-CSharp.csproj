@@ -1,0 +1,1988 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{b1be6b29-eb9e-a855-b1b4-6f2741a63572}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_32;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_CLOUD_FEATURES;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;UNITY_POST_PROCESSING_STACK_V2;AMPLIFY_SHADER_EDITOR;ODIN_INSPECTOR;GAIA_PRESENT;ODIN_INSPECTOR_3;GPU_INSTANCER;STEAMWORKS_NET;HOTFIX_ENABLE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;HSFRAMEWORK_NET_ABOVE_4_5;UNITASK_ADDRESSABLE_SUPPORT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\LuaCore\LuaExecutor.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\ShopUIPanel_UIData.cs" />
+     <Compile Include="Assets\3rd\QuickOutline\Scripts\QuickOutline.cs" />
+     <Compile Include="Assets\Scripts\Utils\DoNotDestroy.cs" />
+     <Compile Include="Assets\Scripts\Utils\SceneHelper.cs" />
+     <Compile Include="Assets\XLua\util\Xxtea.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Refraction.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\MaskBehaviours\InnerMask.cs" />
+     <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
+     <Compile Include="Assets\Scripts\UI\ArchiveItem.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\UI\ModPanelNew.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\GameInfoPanel_UIData.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\_Demo\OrbitCamera.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleLoop.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
+     <Compile Include="Assets\VFX\Toon_Explosion_V1\Example\demoGUI.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\MapRoleBehavior.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20Render.cs" />
+     <Compile Include="Assets\Scripts\UI\ReleaseNotePanel.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\Hovl_Laser2.cs" />
+     <Compile Include="Assets\3rd\i18n\Translator.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\Classes\pg_IgnoreSnapAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\MainMenu\MainMenuInputContext.cs" />
+     <Compile Include="Assets\XLua\Examples\11_RawObject\RawObjectTest.cs" />
+     <Compile Include="Assets\Scripts\Utils\MeshCombiner.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Normals.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\LuaTestStarter.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\XiakeUIPanel_UIData.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Scripts\Beautify.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleBlock.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillCastInstance.cs" />
+     <Compile Include="Assets\XLua\Examples\06_Coroutine\CoroutineTest.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX3_AutoStopLoopedEffect.cs" />
+     <Compile Include="Assets\Scripts\UI\InteractUIPanel.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Scripts\FreeCameraMove.cs" />
+     <Compile Include="Assets\Scripts\Utils\FaceToCamera.cs" />
+     <Compile Include="Assets\Scripts\Utils\Singleton.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\InteractiveObj.cs" />
+     <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20FrameBuffer.cs" />
+     <Compile Include="Assets\Scripts\Utils\Tools\Tools.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\XiakeUI\XiakeUIInputContext.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\TwoFingerGesture.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Glow_Glow_Color.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\ParticleCollisionInstance.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\Battlebox\BattleboxManager.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Scripts\CFX_AutodestructWhenNoChildren.cs" />
+     <Compile Include="Assets\Scripts\MOD\MODRootConfig.cs" />
+     <Compile Include="Assets\Scripts\UI\GameMainMenu.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\PlayerControl\Jyx2_PlayerAutoWalk.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Epic toon VFX 3\Scripts\ObjectInstance.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs" />
+     <Compile Include="Assets\3rd\ScreenLogger\Example\Scripts\BouncingBall.cs" />
+     <Compile Include="Assets\Scripts\UI\Jyx2RoleSelector.cs" />
+     <Compile Include="Assets\3DScene\Model\BigMap\cloud\GlobalFog.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Reflection.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\ModPanel\ModPanelNewInputContext.cs" />
+     <Compile Include="Assets\Scripts\GameSave\RoleInstance.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\PlayerControl\Jyx2_PlayerInput.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Crosshatch.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\FastWaterModel20_GUI_MainEditor.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\StylizedWaterShadowCaster.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickTwist.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\SelectRolePanel_UIData.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\Classes\pg_Enum.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Jyx2PlayerAction.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Edge_Sigmoid.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCDPad.cs" />
+     <Compile Include="Assets\XLua\Examples\02_U3DScripting\LuaBehaviour.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Epic toon VFX 3\Scripts\CellExplosion.cs" />
+     <Compile Include="Assets\3rd\i18n\TranslateAttacher\TextAttacher.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\Classes\pg_Util.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_AAA_Blood_Hit.cs" />
+     <Compile Include="Assets\Scripts\Utils\Tools\HSUnityTools.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_BluePrint.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\FastWaterModel20_GUI_DrawerEditor.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleBlockData.cs" />
+     <Compile Include="Assets\XLua\Examples\04_LuaObjectOrented\InvokeLua.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\UINavigation\NavigateUtil.cs" />
+     <Compile Include="Assets\Scripts\Utils\DebugInfoManager.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\GameMod.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillCoverType.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_WorldMapSaveData.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Epic toon VFX 2\Demo scene\DemoToonVFX.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\Jyx2InputContextBase.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Blizzard.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Scripts\SphereAnimator.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Wizard spells pack\Scripts\FrontAttack.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets\Scripts\UI\DebugPanel.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Archive\GameOverInputContext.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\GameModSteamWorkshop.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\BaseFinger.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\GameModNative.cs" />
+     <Compile Include="Assets\Scripts\UI\MessageBox.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Shore.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\ControllerData\ControllerSpriteAsset.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\GameEvent.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\AutoDestroyGameObject.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Scripts\Demo1.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\BigMapLocationNameDrawer.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\GameEventManager.cs" />
+     <Compile Include="Assets\Scripts\Utils\Tools\UGUIExtensions.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\Coroutine_Runner.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleUtil.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\UINavigation\NavigateFocus.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Atmosphere_Rain_Pro.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\SecretNav.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\TileWorldCreatorSaveLoad.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Paper.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Comics.cs" />
+     <Compile Include="Assets\Scripts\UI\BattleActionOrderPanel.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Texture.cs" />
+     <Compile Include="Assets\3D\Script\GhostItem.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Example\Script\bl_ExampleUI.cs" />
+     <Compile Include="Assets\3rd\i18n\TranslatorDef\TranslationUtility.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo track markers\RaycastInstance.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\StylizedWaterUtilities.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\InteractUIPanel_UIData.cs" />
+     <Compile Include="Assets\XLua\Src\LuaException.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleLoader.cs" />
+     <Compile Include="Assets\Scripts\UI\SystemUIPanel.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\Classes\pg_SceneMeshRender.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\Loom.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponents\SelectButton.cs" />
+     <Compile Include="Assets\Scripts\UI\GameOver.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX3_Demo_Translate.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_CsRoleItem.cs" />
+     <Compile Include="Assets\Scripts\UI\CommonNoticePanel.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\SelectRole\SelectRolePanelInputContext.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\GameModEditor.cs" />
+     <Compile Include="Assets\Scripts\Utils\NetworkUtils.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Scripts\TileWorldConfiguration.cs" />
+     <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Events\TileWorldEvents.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\GameMainMenu_UIData.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleFieldModel.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Noise.cs" />
+     <Compile Include="Assets\Scripts\UI\GeneralSettingsPanel.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_Water_Drop.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\MeshCombineUtility.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\Jyx2Player.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCInput.cs" />
+     <Compile Include="Assets\XLua\Examples\01_Helloworld\Helloworld.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\TileWorldAlgorithmLookup.cs" />
+     <Compile Include="Assets\Scripts\UI\ShopUIPanel.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Component\ETCSetDirectActionTransform.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_RoleInstance.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_Dream.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
+     <Compile Include="Assets\3D\Script\GhostShadow.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_BlackHole.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Paper2.cs" />
+     <Compile Include="Assets\XLua\Src\Utils.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20Compiler.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_GameRuntimeData.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_Myst.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Wizard spells pack\Demo scene\Demo scene files\CameraController.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\FastWaterModel20FakeLight.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\ta\DissolveByCamera.cs" />
+     <Compile Include="Assets\3DScene\Model\BigMap\cloud\PostEffectsBase.cs" />
+     <Compile Include="Assets\3rd\ScreenLogger\ScreenLogger.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickPinch.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillEffects\RotateBlockParticles.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Content\Script\Core\bl_Text.cs" />
+     <Compile Include="Assets\Scripts\GameSave\SkillInstance.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\BattleEnd\FullSuggestUIInputContext.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\UINavigation\INavigable.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Manga_FlashWhite.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_Snow.cs" />
+     <Compile Include="Assets\XLua\Examples\08_Hotfix\StatefullTest.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickDrag.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Glitch_Mozaic.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\CommonTipsUIPanel_UIData.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCAxis.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\GraphicSettingsHelper.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20HelperController.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\BattleActionUI\BattleActionInputContext.cs" />
+     <Compile Include="Assets\Scripts\GameCore\GameConst.cs" />
+     <Compile Include="Assets\Scripts\UI\Framework\Jyx2_UIBase.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\CameraControls\CameraHelper.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\MonoBehaviour\pg_IgnoreSnap.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Scripts\CFX2_AutoRotate.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickEnterOverExist.cs" />
+     <Compile Include="Assets\Scripts\EventsGraph\Jyx2NodeGraph.cs" />
+     <Compile Include="Assets\Scripts\Utils\DeactiveWhenPlaying.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\UI\AddModPanelTemp.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillEditor\Jyx2SkillEditor.cs" />
+     <Compile Include="Assets\Scripts\UI\ShopUIItem.cs" />
+     <Compile Include="Assets\Scripts\UI\SavePanel.cs" />
+     <Compile Include="Assets\Scripts\MOD\Downloader.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\Jyx2LuaBridge.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_NewCellShading.cs" />
+     <Compile Include="Assets\Scripts\UI\BattleOKPanel.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_AAA_BloodOnScreen.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\MapChest.cs" />
+     <Compile Include="Assets\Mods\SAMPLE\Scripts\StoryPlayable.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCJoystick.cs" />
+     <Compile Include="Assets\3rd\i18n\TranslateAttacher\BaseAttacher.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX3_Demo.cs" />
+     <Compile Include="Assets\Scripts\UI\MainMenuTopBarUI.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_PostProcess.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\PlayerControl\Jyx2_PlayerMovement.cs" />
+     <Compile Include="Assets\XLua\Examples\07_AsyncTest\MessageBox.cs" />
+     <Compile Include="Assets\Scripts\UI\ChildGoComponent.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\Jyx2AnimationBattleRole.cs" />
+     <Compile Include="Assets\Mods\SAMPLE\Scripts\StoryControlTrack.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InitScene.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\GameModManualInstalled.cs" />
+     <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
+     <Compile Include="Assets\Scripts\Utils\Tools\ToolsSharedEx.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Wizard spells pack\Scripts\FrontSpawner.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleManager.cs" />
+     <Compile Include="Assets\3D\Animal pack deluxe\Scripts\MoveCamera.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponentFilter.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Scripts\TileWorldObjectScatter.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\Jyx2Boat.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_FX_EarthQuake.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\AIResult.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\LevelMasterBooster.cs" />
+     <Compile Include="Assets\VFX\EffectsPackage\ThirdPartys\MirrorReflection\Scripts\MirrorReflection.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Paper3.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Scripts\TileWorldObjectScatterConfiguration.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectTranslator.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Demoscenes\Scripts\CameraOrbitNavigation.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Scripts\BeautifyProfile.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Blur_Radial_Fast.cs" />
+     <Compile Include="Assets\Scripts\Utils\Tools\ExcelToLua.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Wizard spells pack\Demo scene\Demo scene files\MovementInput.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\BagUI\BagUIInputContext.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\Classes\pg_IconUtility.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_SubMapSaveData.cs" />
+     <Compile Include="Assets\Scripts\UI\GameSettingsPanel.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\EGA_EffectSound.cs" />
+     <Compile Include="Assets\Scripts\UI\HUDItem.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Example\Script\bl_RandomBot.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Pixelisation_OilPaintHQ.cs" />
+     <Compile Include="Assets\3rd\ScreenLogger\Example\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\UI\BattleMainUIPanel.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Manga_Flash.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\AutoDestroyPS.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Vision_Aura.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponents\UIPrimitiveBase.cs" />
+     <Compile Include="Assets\Scripts\UI\RoleUIItem.cs" />
+     <Compile Include="Assets\3rd\i18n\TranslatorDef\TranslationStruct.cs" />
+     <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\EnableDepthBuffer.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_AAA_WaterDropPro.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Scripts\Demo2.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\Battlebox\BattleboxDataset.cs" />
+     <Compile Include="Assets\Scripts\UI\Jyx2RoleHeadUI.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\MainUIPanel_UIData.cs" />
+     <Compile Include="Assets\Scripts\GameSave\WorldMapSaveData.cs" />
+     <Compile Include="Assets\3DScene\Model\Common\FX\Red_UVScroller.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillEditor\Jyx2SkillDisplayAsset.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Scripts\TileWorldCreatorRTE.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Manga.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillEffects\ScaleParticles.cs" />
+     <Compile Include="Assets\Scripts\UI\CommonTipsUIPanel.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\MainMenu\InputNameContext.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\StylizedWaterBlur.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\Gesture.cs" />
+     <Compile Include="Assets\Scripts\GameCore\StoryEngine.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_Heat.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\FastWaterModel20_GUI_rParamsEditor.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\CameraControls\CameraDepth.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_Distortion.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\Jyx2LuaBridge_SceneApi.cs" />
+     <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Jyx2Input_UIContext.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\Jyx2LuaToCsBridge.cs" />
+     <Compile Include="Assets\3rd\i18n\TranslateAttacher\DropdownAttacher.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\MapTeleportor.cs" />
+     <Compile Include="Assets\Scripts\UI\LoadingPanel.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\GameSetting\GameSettingInputContext.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\LuaManager.cs" />
+     <Compile Include="Assets\Scripts\UI\XiakeUIPanel.cs" />
+     <Compile Include="Assets\Scripts\Utils\GameUtil.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\Jyx2_PlayerPrefs_QuitSave.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\InputContext.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\System\SystemUIPanelInputContext.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Content\Script\Internal\Enum\bl_Guidance.cs" />
+     <Compile Include="Assets\Scripts\Utils\ScreenLoggerHotkeyManager.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\Hovl_Laser.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\CommonNoticePanel_UIData.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Scripts\TileWorldCruncher.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Content\Script\Core\Utils\bl_TextOnCollision.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\ControllerData\DefaultControllerSpriteData.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickTouch.cs" />
+     <Compile Include="Assets\Scripts\Utils\UnityTools.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\Jyx2_PlayerPrefs.cs" />
+     <Compile Include="Assets\Scripts\Utils\JYX2Outline.cs" />
+     <Compile Include="Assets\3rd\i18n\Ext\TransformAndGameobjectExt.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCButton.cs" />
+     <Compile Include="Assets\Scripts\UI\Helps\UIHelper.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillCastHelper.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Interact\InteractPanelInputContext.cs" />
+     <Compile Include="Assets\Scripts\UI\GlobalHotkeyManager.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\BattleMainUIPanel_UIData.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponents\ControllerButtonNotice.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Shop\ShopUIInputContext.cs" />
+     <Compile Include="Assets\Mods\SAMPLE\Scripts\StoryControlAsset.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Demoscenes\Scripts\CameraNavigation.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\InputContextManager.cs" />
+     <Compile Include="Assets\Scripts\LuaCore\LuaMonoBehavior.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ComponentExtensions.cs" />
+     <Compile Include="Assets\Scripts\GameCore\Jyx2Console.cs" />
+     <Compile Include="Assets\Scripts\GameCore\RuntimeEnvSetup.cs" />
+     <Compile Include="Assets\XLua\Examples\10_SignatureLoader\SignatureLoaderTest.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickLongTap.cs" />
+     <Compile Include="Assets\Scripts\UI\CurrentBattleRolePanel.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCBase.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\BattleActionUIPanel_UIData.cs" />
+     <Compile Include="Assets\Scripts\UI\HPBar.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
+     <Compile Include="Assets\Scripts\UI\ChatUISelectionItem.cs" />
+     <Compile Include="Assets\Scripts\Utils\CustomHeaderAttribute.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Archive\SavePanelInputContext.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\ChatUIPanel_UIData.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\BattleOKPanel_UIData.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\CameraControls\CinemachineTriggerActionHelper.cs" />
+     <Compile Include="Assets\XLua\Src\LuaFunction.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\MapChestInteract.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\StylizedWaterRenderer.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Broken_Screen.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\FixWithGameRuntime.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\FullSuggestUIPanel_UIData.cs" />
+     <Compile Include="Assets\XLua\Src\LuaFunctionExtend.cs" />
+     <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\TileWorldMaskLookup.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Wizard spells pack\Scripts\TargetProjectile.cs" />
+     <Compile Include="Assets\Scripts\UI\ModPanelLauncher.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Algorithms\BSPDungeonAlgorithm.cs" />
+     <Compile Include="Assets\XLua\Src\TypeExtensions.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\StylizedWaterResources.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\Finger.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponents\NonDrawingGraphic.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_ShockWaveManual.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo magic circles Vol 1\CameraHolder.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\TileWorldNeighbourCounter.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Manga_Flash_Color.cs" />
+     <Compile Include="Assets\Scripts\UI\RandomPropertyComponent.cs" />
+     <Compile Include="Assets\Scripts\UI\TheEnd.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Jyx2_Input.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\LoadingPanel\LoadingPanelInputContext.cs" />
+     <Compile Include="Assets\Scripts\UI\Jyx2ItemUI.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\MaskBehaviours\CircleMask.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Content\Script\Core\bl_HUDText.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickBase.cs" />
+     <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\FastWaterModel20ManualBaking.cs" />
+     <Compile Include="Assets\Scripts\GameSave\GameRuntimeData.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo projectiles\DemoShooting.cs" />
+     <Compile Include="Assets\Scripts\ResourceManagement\ModelAssetsLogic\ModelAsset.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Common\CommonNoticeInputContext.cs" />
+     <Compile Include="Assets\XLua\Examples\07_AsyncTest\AsyncTest.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Example\Script\bl_TestMouseEvent.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_ShockWave.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\FastWaterModel20_GUI_DrawerUltraFastMode.cs" />
+     <Compile Include="Assets\Scripts\Utils\Tools\FileTools.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Scripts\CFX_ShurikenThreadFix.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\GUI\Draw\FastWaterModel20_GUI_Lighting.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleBlockVector.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCArea.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Algorithms\MazeAlgorithm.cs" />
+     <Compile Include="Assets\XLua\Src\LuaAsset.cs" />
+     <Compile Include="Assets\3D\Jyx2Timeline\PlayableDirectorHelper.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\GameSettingManager.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Wizard spells pack\Demo scene\Demo scene files\CameraShaker.cs" />
+     <Compile Include="Assets\Scripts\Utils\MonoSingleton.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\RoleHelper.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\SavePanel_UIData.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_Toon.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\LevelLoader.cs" />
+     <Compile Include="Assets\Scripts\UI\MainUIPanel.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Algorithms\CellularAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\CameraControls\GameViewPortManager.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Content\Script\Internal\Utils\bl_UHTUtils.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectTranslatorPool.cs" />
+     <Compile Include="Assets\XLua\Src\LuaTable.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickTap.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Scripts\Demo4.cs" />
+     <Compile Include="Assets\Scripts\ResourceManagement\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\LevelMaster.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\MaskBehaviours\IMaskBehaviour.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\BattleActionOrderPanel_UIData.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Scripts\Delay.cs" />
+     <Compile Include="Assets\Scripts\UI\GamepadHelper.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\EasyTouch.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\MaskBehaviours\BorderMask.cs" />
+     <Compile Include="Assets\Scripts\GameCore\GameSettings.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Plugins\ETCTouchPad.cs" />
+     <Compile Include="Assets\XLua\Examples\09_GenericMethod\Foo.cs" />
+     <Compile Include="Assets\XLua\Src\RawObject.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\EasyTouchInput.cs" />
+     <Compile Include="Assets\Scripts\GameCore\GameStart.cs" />
+     <Compile Include="Assets\XLua\Src\TemplateEngine\TemplateEngine.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\TileWorldCombiner.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\ProjectileMover.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\QuickSwipe.cs" />
+     <Compile Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX2_Demo.cs" />
+     <Compile Include="Assets\XLua\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
+     <Compile Include="Assets\Scripts\Utils\MonoUtil.cs" />
+     <Compile Include="Assets\Scripts\UI\GameInfoPanel.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\Hovl_DemoLasers.cs" />
+     <Compile Include="Assets\XLua\Examples\06_Coroutine\Coroutine_Runner.cs" />
+     <Compile Include="Assets\3rd\i18n\Ext\ISerializationCallbackReceiver.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\Jyx2InteractiveButton.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\MainMenu\RandomPropetyInputContext.cs" />
+     <Compile Include="Assets\Scripts\UI\SelectRolePanel.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Jyx2InputBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ResourceManagement\ModelAssetsLogic\AutoUnloadSceneOnPlay.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Utility\TileWorldUndoStack.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_Shield.cs" />
+     <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest2.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Algorithms\SimpleDungeonAlgorithm.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Drawing_EnhancedComics.cs" />
+     <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20Initialize.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Blur_Radial.cs" />
+     <Compile Include="Assets\Scripts\GameMaps\BattleRole.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Algorithms\TileWorldAlgorithms.cs" />
+     <Compile Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\FastWaterModel20Controller.cs" />
+     <Compile Include="Assets\VFX\Toon_Explosion_V1\Plugins\HTExplosion.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleGridsCell.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\BattleActionUI\BattleMainInputContext.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Content\Script\Core\Constructors\HUDTextInfo.cs" />
+     <Compile Include="Assets\XLua\Src\LuaBase.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponents\SelectButtonGroup.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\BagUIPanel_UIData.cs" />
+     <Compile Include="Assets\Easy Save 3\Types\ES3UserType_SkillInstance.cs" />
+     <Compile Include="Assets\Scripts\UI\UIData\SystemUIPanel_UIData.cs" />
+     <Compile Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Scripts\Delay01.cs" />
+     <Compile Include="Assets\Scripts\UI\Framework\Jyx2_UIManager.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Jyx2InputUtil.cs" />
+     <Compile Include="Assets\Scripts\GameCore\GlobalAssetConfig.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_FishEye.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Algorithms\IAlgorithms.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\Chat\ChatUIInputContext.cs" />
+     <Compile Include="Assets\Scripts\UI\ConsolePanel.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Distortion_BlackHole.cs" />
+     <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
+     <Compile Include="Assets\XLua\Examples\05_NoGc\NoGc.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_Anomaly.cs" />
+     <Compile Include="Assets\Scripts\UI\GraphicSettingsPanel.cs" />
+     <Compile Include="Assets\Scripts\GameCore\BootMainMenu.cs" />
+     <Compile Include="Assets\VFX\Hovl Studio\Epic toon VFX 2\Prefabs\Front attack\FrontMover.cs" />
+     <Compile Include="Assets\Scripts\IFix\IFixManager.cs" />
+     <Compile Include="Assets\3rd\ProCore\ProGrids\Classes\pg_Constant.cs" />
+     <Compile Include="Assets\Scripts\Utils\Helpers\GraphicSetting.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\Scripts\TileWorldCreator.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\Battlebox\BattleboxHelper.cs" />
+     <Compile Include="Assets\3DScene\StylizedWater\Scripts\StylizedWater.cs" />
+     <Compile Include="Assets\XLua\Src\LuaEnv.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Engine\ECamera.cs" />
+     <Compile Include="Assets\Scripts\UI\ChatUIPanel.cs" />
+     <Compile Include="Assets\3rd\EasyTouchBundle\EasyTouch\Plugins\Components\EasyTouchTrigger.cs" />
+     <Compile Include="Assets\3rd\ScreenLogger\Example\Scripts\Rotator.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_AAA_Blood.cs" />
+     <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
+     <Compile Include="Assets\XLua\Examples\ExampleGenConfig.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\SkillEditor\Jyx2SkillEditorEnemy.cs" />
+     <Compile Include="Assets\Scripts\ResourceManagement\Jyx2ResourceHelper.cs" />
+     <Compile Include="Assets\Scripts\ResourceManagement\ResLoader.cs" />
+     <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\MessageBox\MessageBoxInputContext.cs" />
+     <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
+     <Compile Include="Assets\Scripts\UI\BattleActionUIPanel.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Demoscenes\Scripts\RuntimeConfigurationCreation.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Core\MaskBehaviours\RandomNoiseMask.cs" />
+     <Compile Include="Assets\Scripts\UI\FullSuggestUIPanel.cs" />
+     <Compile Include="Assets\XLua\Src\GenericDelegateBridge.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_3D_Fog_Smoke.cs" />
+     <Compile Include="Assets\Scripts\UI\CompassModel.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\RangeLogic.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\Battlebox\BattleboxShared.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\InputManager.cs" />
+     <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
+     <Compile Include="Assets\Resources\TileWorldCreator\_Demoscenes\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Lut_2_Lut.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Scripts\CameraAnimator.cs" />
+     <Compile Include="Assets\Scripts\UI\BagUIPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\SkillUIItem.cs" />
+     <Compile Include="Assets\Scripts\UI\UIComponents\UIPolygon.cs" />
+     <Compile Include="Assets\3rd\UHUDText\Example\Script\bl_UHTCamera.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_AAA_Blood_Plus.cs" />
+     <Compile Include="Assets\Scripts\GameCore\InputLogics\Core\Context\UI\MainMenu\ReleaseNoteInputContext.cs" />
+     <Compile Include="Assets\Scripts\MOD\ModV2\UI\AddModPanel.cs" />
+     <Compile Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Scripts\CameraFilterPack_Atmosphere_Rain_Pro_3D.cs" />
+     <Compile Include="Assets\Scripts\GameBattle\BattleGridsManager.cs" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\Masking\MaskStdSpecular.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\2Textures\Diffuse.shader" />
+     <None Include="Assets\3DScene\Shader\Lightbeam_Detail_GPUI.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Scripts\Textures\Intersection\Readme.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Unlit\2 Textures_realtime_shadow.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CosTime.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Specialized\Mali 400\Surface\3Textures\Bumped.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\MKToonFree_GPUI.shader" />
+     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
+     <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
+     <None Include="Assets\3rd\EasyTouchBundle\Readme.txt" />
+     <None Include="Assets\Resources\TileWorldCreator\_Demoscenes\Maps\map_mixingpresets.xml" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleDivideOpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\MTE_EDITOR_RESOURCE_LOCATION.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\UIDefault.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\CopyDepth.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Shaders\Unlit-ColoredAlpha.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WeightedBlendNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\ShaderLibrary\ShaderLibrary.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldPosInputsNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TauNode.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\Refraction_c.shader" />
+     <None Include="Assets\3rd\Editor Default Resources\nu Assets\Shared\Shaders\CanvasSelection.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareLessNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Epic toon VFX 3\Demo scene\HDRP and URP(LWRP).txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Specular-NoFog.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\2Textures.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Edge_Sigmoid.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LinearToGammaNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo projectiles\Readme.txt" />
+     <None Include="Assets\3rd\Editor Default Resources\nu Assets\Shared\Shaders\Canvas.shader" />
+     <None Include="Assets\VFX\Toon_Explosion_V1\Documentation\02 - How to create an explosion.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NegateNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\Masking\MaskStdSpecularCG.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Scripts\Textures\Normals\Readme.txt" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
+     <None Include="Assets\VFX\Jyx2Effect\Shaders\WFX_S Multiply Soft Scroll.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\8Textures\Specular.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\EDMultiply.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Demo scene\HDRP and URP.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\2Textures\Bumped.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_BluePrint.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\MKToonFreeOutlineOnly.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_SoftUnlit.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\Diffuse-NoFog.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\8Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Common\MKToonLight.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TanOpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Grass\UnlitAlphaCutout.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Languages\zh-Hans.xml" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\5Textures_DisplayNormal.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexTangentNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\TextureArrayInspector.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\3Textures\Specular_for_target_2.0.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ACosOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FWidthOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ScaleAndOffsetNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Shaders\Highlight.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Blur_Radial_Fast.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Add.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Unlit\3 Textures_baked_lightmap.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\7Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\MultiPassUnlit.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\ShadowCaster\MKToonShadowCaster.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\CreatingTerrainsWithASE.txt" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Minimum Mode v1.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ATan2OpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Vertex-colored\Bumped.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareWithRange.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\cgwell_dissolution_blend.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceLightPosNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Specular_for_target_2.0.shader" />
+     <None Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Issues in button behavior (MAC).txt" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Surface\MKToonSurface.cginc" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Prefabs\Projectiles\Readme.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Diffuse-NoFog.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TanhOpNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\DSSDSignatures.cginc" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo AOE skills\Readme.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\8Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\3Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\VertexColored-Fog.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCRemap.shader" />
+     <None Include="Assets\3DScene\Shader\Leaf.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\TextureArray_DisplayNormal.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\4Textures\Specular.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PrimitiveIDVariableNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\4Textures\HeightBlendPacked.shader" />
+     <None Include="Assets\3DScene\Shader\Leaf_backup_GPUI.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\CartoonFX2 Readme.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Bumped_for_target_2.0.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeLightmapHlpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_EncodeFloatRGBAHlpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SwizzleNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RadiansOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RotatorNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCPixelateUV.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Blizzard.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GetLocalVarNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Epic toon VFX 2\Prefabs\Punches\Readme.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_BlackHole.shader" />
+     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\Lit_CenterGlow.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Texture2D.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\ShadowCaster\MKToonShadowCasterSetup.cginc" />
+     <None Include="Assets\3DScene\Shader\BigMap_test.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\Util.cginc" />
+     <None Include="Assets\Mods\xiastart_roguelike\BuildSource\RELEASE_NOTE.txt" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Sampling.cginc" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\CartoonFX2 Releases Notes.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Specular-Fog.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LightColorNode.shader" />
+     <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_FX_EarthQuake.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Scripts\Resources\StylizedWaterReflectionBlur.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_AAA_Blood.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FractNode.shader" />
+     <None Include="Assets\3DScene\Shader\Bigmap_items.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_AAA_WaterDropPro.shader" />
+     <None Include="Assets\3DScene\Shader\StaticBakeObj.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\SmoothSmoke.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TimeNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Prefabs\HDRP and URP(LWRP).txt" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\Beautify.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\6Textures\Diffuse.shader" />
+     <None Include="Assets\3DScene\Shader\New Terrain.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\ShadowCaster\MKToonShadowCasterIO.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Languages\en-US.xml" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LogOpNode.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Reflection.cginc" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\SycoSSD.cginc" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo magic circles Vol 1\Readme.txt" />
+     <None Include="Assets\3rd\EasyTouchBundle\EasyTouch\_Documentation\How to migrate from EasyTouch 4.X.txt" />
+     <None Include="Assets\Mods\README.txt" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\cgwell Add Mask.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FunctionInputNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\4Textures\Bumped.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCFlipBookUVAnimation.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Paper3.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\Particle Add_RT.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\DissolveNoise.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FresnelNode.shader" />
+     <None Include="Assets\3rd\Demigiant\readme_DOTweenPro.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\6Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LerpOp.shader" />
+     <None Include="Assets\3rd\QuickOutline\Resources\Shaders\OutlineMask.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_BlackHole.shader" />
+     <None Include="Assets\3DScene\Shader\Cutout_Outline.shader" />
+     <None Include="Assets\Mods\JYX2\BuildSource\RELEASE_NOTE.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Shield.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Wizard spells pack\Demo scene\About demo.txt" />
+     <None Include="Assets\3DScene\Shader\SceneSuf.shader" />
+     <None Include="Assets\Resources\NLogDefault.xml" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_Flash_Color.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ExpOpNode.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Shaders\StylizedWater_Mobile.shader" />
+     <None Include="Assets\3DScene\Shader\SceneSufWith5tetures.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RelayNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\6Textures\Specular.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Grass\AlphaCutout.shader" />
+     <None Include="Assets\3rd\ScreenLogger\Readme.txt" />
+     <None Include="Assets\VFX\Jyx2Effect\Shaders\ParticleCook-Transparent-AlphaBlend-Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjectToWorldTransfNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_EncodeFloatRGHlpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Bumped-Fog.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\CartoonFX3 Readme.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_IndirectDiffuseLight.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\TextureArray\Lambert.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SinTimeNode.shader" />
+     <None Include="Assets\Scripts\EventsGraph\README.txt" />
+     <None Include="Assets\Mods\JYX2\Lua\事件代号.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SwitchByFaceNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareGreaterEqual.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Shaders\E\E\AlphaBlend.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CoshOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleTimeNode.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjectScaleNode.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\fesnel.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo scene lasers\If you want to use lasers in 2D.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RoundOpNode.shader" />
+     <None Include="Assets\Mods\SAMPLE\BuildSource\Items\README.txt" />
+     <None Include="Assets\3DScene\Shader\Leaf_backup.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FmodOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CrossProductOpNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Shaders\Add_Fresnel.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareNotEqual.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\TextureArray\BlinnPhong.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Toon.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PowerNode.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Utils.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\TextureArray_Triplanar.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DotProductOpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Vertex-colored\Diffuse.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_AAA_Blood_Plus.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SmoothstepOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PosVertexDataNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\Packed\4Textures.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ScreenPosInputsNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NormalizeNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SwitchNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DdxOpNode.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20 DepthRender SecondPass.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RsqrtOpNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Pixelisation_OilPaintHQ.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20 RefractionRender.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TexturePropertyNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Shaders\Ice.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_ReflBumpSpec_Cut.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\EDStandardSpecularVACutoff.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TangentSignVertexDataNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Specialized\Mali 400\Surface\2Textures\Diffuse.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\Particle Alpha Blend_RT.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\7Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimplifiedFModOpNode.shader" />
+     <None Include="Assets\Resources\TileWorldCreator\_Demoscenes\Maps\map_cliffisland.xml" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareGreater.shader" />
+     <None Include="Assets\VFX\Hovl Studio\8 KI levels\Shaders\Distortion.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Surface\MKToonSurfaceIO.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FloorOpNode.shader" />
+     <None Include="Assets\Resources\RELEASE_NOTE_PLATFORM.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Broken_Screen.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GrayscaleNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\8 KI levels\Shaders\Blend_TwoSides.shader" />
+     <None Include="Assets\VFX\Jyx2Effect\Shaders\WFX_S Particle Add A8.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Epic toon VFX 2\Demo scene\Readme.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexBinormalNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\Electricity.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\4Textures\Bumped.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\4Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_AlphaEdgeBleed.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_FishEye.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjSpaceViewDirHlpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\2Textures\VertexColored.shader" />
+     <None Include="Assets\VFX\Hovl Studio\8 KI levels\Shaders\Blend_CenterGlow.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\Blend_Normals.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_AAA_Blood_Hit.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\5Textures.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMinNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_IndirectSpecularLight.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FunctionOutputNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ConditionalIfNode.shader" />
+     <None Include="Assets\3rd\Lean\READ ME.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Unlit.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ViewDirInputsCoordNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\EDStandardSpecular.shader" />
+     <None Include="Assets\3DScene\Shader\New Amplify Shader 1_GPUI.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SqrtOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\SRP\README.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\7Textures\Specular.shader" />
+     <None Include="Assets\3DScene\Shader\SceneSuf_GPUI.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Particles\ParticleBlendZBuffer.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Paper2.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Shaders\PaintTexturePreview_URP.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Vision_Aura.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleSubtractOpNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyLum.cginc" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Lighting.cginc" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_FlashWhite.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\3Textures\Bumped_for_target_2.0.shader" />
+     <None Include="Assets\3DScene\Shader\Grass.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TriplanarNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyEA.cginc" />
+     <None Include="Assets\Resources\ABMD5.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Distortion.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\SycoDSSD.cginc" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Demo scene\Readme.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_EnhancedComics.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Shore.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ComponentMaskNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Prefabs\AOE spells\Readme.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DiffuseAndSpecularFromMetallic.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjSpaceLightDirHlpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TruncOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\PostProcess.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Specialized\Mali 400\ReadMe.txt" />
+     <None Include="Assets\3DScene\Shader\SeaWave.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\7Textures\Bumped.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeFloatRGBAHlpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TextureCoordinatesNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\6Textures\Diffuse.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyAdvancedParams.cginc" />
+     <None Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\ReleaseNotes.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Bumped-NoFog.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Outline\MKToonOutlineOnlyBase.cginc" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo scene lasers\Readme.txt" />
+     <None Include="Assets\3DScene\StylizedWater\Changelog.txt" />
+     <None Include="Assets\3rd\Editor Default Resources\nu Assets\Shared\Shaders\CanvasChannels.shader" />
+     <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Refraction.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\2Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LayeredBlendNode.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Scripts\Textures\Heightmap\Readme.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\ChangeLog.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ParallaxMappingNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\LightGlow.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Outline\MKToonOutlineOnlyIO.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Vertex-colored\ColorOnly.shader" />
+     <None Include="Assets\3rd\EasyTouchBundle\EasyTouchControls\Documentation\Version 2.0.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\3Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\4Textures\Specular_for_target_2.0.shader" />
+     <None Include="Assets\3DScene\Model\BigMapNew\BigMapTree.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector2Node.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\FastWaterModel20 DepthRender.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\3Textures\Specular.shader" />
+     <None Include="Assets\VFX\Hovl Studio\PBR Fantasy staff\Shaders\Readme.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\Packed\8Textures.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Shaders\Lightning.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Shaders\ASESShaderSelectorUnlit.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Water_Drop.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\Diffuse-Fog.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\8Textures\Bumped.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_AppendNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\EDVertexAlphaN.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Prefabs\Magic circles\Loop version\How to use.txt" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_ReflBumpSpec.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GammaToLinearNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\6Textures\Bumped.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model 2.0 v1.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\VertexColored-Fog.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DdyOpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\WaterFlow.shader" />
+     <None Include="Assets\VFX\Hovl Studio\PBR Fantasy staff\Shaders\Staff.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Shaders\ConverterSplitPreview_URP.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\4Textures.shader" />
+     <None Include="Assets\3rd\QuickOutline\Readme.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexIdVariableNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\Masking\MaskStdMetallicCG.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Log2OpNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Particles\ParticleAlpha.shader" />
+     <None Include="Assets\3rd\EasyTouchBundle\EasyTouch\How to migrate from EasyTouch 4.X.txt" />
+     <None Include="Assets\3D\Script\GhostShadow.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareEqual.shader" />
+     <None Include="Assets\3DScene\Shader\New Amplify Shader.shader" />
+     <None Include="Assets\3DScene\Shader\Lightbeam_Detail.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldToObjectTransfNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMaxOp.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\Masking\MaskStdMetallicCG_DoubleSided.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Rain_Pro.shader" />
+     <None Include="Assets\VFX\Toon_Explosion_V1\Documentation\01 - Package description.txt" />
+     <None Include="Assets\VFX\Hovl Studio\Wizard spells pack\Shaders\Blend_LinePath.shader" />
+     <None Include="Assets\3rd\Demigiant\DemiLib\Core\DemiLib.xml" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_AlphaBumpSpec.shader" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\StaticBakeObj.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Lut_2_lut.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\VertexColored-NoFog.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SaturateNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RangedFloatNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Dust.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_AlphaSimple.shader" />
+     <None Include="Assets\3DScene\Shader\Leaf_GPUI.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Vertex-colored\Specular.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeViewNormalStereoHlpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\LinearPreviews.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\4Textures\Bumped_for_target_2.0.shader" />
+     <None Include="Assets\3D\juese\备注.txt" />
+     <None Include="Assets\3DScene\Shader\Grass_GPUI.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TangentVertexDataNode.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Texture.cginc" />
+     <None Include="Assets\Mods\SAMPLE\BuildSource\RELEASE_NOTE.txt" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\cgwell_dissolution_add.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\EDVertexAlpha.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Atmosphere_Rain_Pro_3D.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DegreesOpNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\DSSD.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SignOpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\3Textures\Bumped.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\Bumped-Fog.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\3Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RefractOpVec.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldTransformParams.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyOrtho.cginc" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\SycoFSSD.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RegisterLocalVarNode.shader" />
+     <None Include="Assets\3rd\ProCore\ProGrids\About\pc_AboutEntry_ProGrids.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\Grass.shader" />
+     <None Include="Assets\Scripts\MOD\mod.xml" />
+     <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Dream.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector3Node.shader" />
+     <None Include="Assets\3rd\Editor Default Resources\nu Assets\Shared\Shaders\CanvasUtil.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCCompareLowerEqual.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector4Node.shader" />
+     <None Include="Assets\3D\juese2\备注.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\MTECommon.hlsl" />
+     <None Include="Assets\3D\Jyx2RoleModels\Models\README.txt" />
+     <None Include="Assets\3DScene\Shader\Toon_Terrain.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Common\MKToonV.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\2Textures\Diffuse.shader" />
+     <None Include="Assets\VFX\Hovl Studio\8 KI levels\Shaders\BlendDistort.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexColorNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Unlit\EDMultiply.shader" />
+     <None Include="Assets\3rd\Editor Default Resources\nu Assets\Shared\Shaders\UnlitColorAlpha.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Specialized\Mali 400\Surface\2Textures\Bumped.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\MTECommonPBR.hlsl" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_HSVToRGBNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DesaturateNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WireNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_StaticSwitchNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyBasic.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Particle Alpha Blend.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMultiplyOpNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Shaders\AddTrail.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Readme.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\8Textures\Bumped.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ASinOpNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\README.txt" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Shaders\Scroll.shader" />
+     <None Include="Assets\3DScene\Model\BigMap\cloud\GlobalFog.shader" />
+     <None Include="Assets\Prefabs\LICENSE_FOR_JYX2.txt" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\Particle Blend_RT.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DistanceOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LightAttenuation.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FaceVariableNode.shader" />
+     <None Include="Assets\3DScene\Shader\New Terrain Detail.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Shaders\StylizedWater_Desktop.shader" />
+     <None Include="Assets\3rd\ProCore\ProGrids\Shader\pg_GridShader.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model PostProcess.cginc" />
+     <None Include="Assets\Resources\TileWorldCreator\README.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NormalVertexDataNode.shader" />
+     <None Include="Assets\VFX\Jyx2Effect\Shaders\ParticleCook-Transparent-Additive-Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceCameraPos.shader" />
+     <None Include="Assets\3DScene\Model\BigMap\cloud\QuantumMetaCloud-AlphaClip.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SamplerNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Manga_Flash.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_UnpackScaleNormalNode.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\MKToonFreeMobile.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\4Textures\Diffuse.shader" />
+     <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ClampOpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\2Textures\Bumped.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Outline\MKToonOutlineOnlySetup.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\VertexColored-NoFog.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Myst.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\CopyDepthBiased.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeDepthNormalNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\VertexColor.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\README.txt" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\SSD-M.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ReflectOpNode.shader" />
+     <None Include="Assets\3DScene\Shader\BigMap.shader" />
+     <None Include="Assets\3DScene\Shader\New Amplify Shader 1.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\6Textures\Bumped.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Wizard spells pack\Shaders\Fire.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\cgwell Alpha Blend Mask.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_Heat.shader" />
+     <None Include="Assets\BuildSource\EventsGraph\README.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\Beautify.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LengthOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_StepOpNode.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Shaders\E\E\ADD_Top.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCIf.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyMobile_GPUI.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ColorNode.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\Shaders\CFX2 Particle Alpha Blend Tint.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TexCoordVertexDataNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Details\ReadMe.txt" />
+     <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\TextureArray\TextureArray_DisplayNormal.shader" />
+     <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Glow_Glow_Color.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NodeMasking.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\MKToonFree.shader" />
+     <None Include="Assets\3DScene\Model\BigMap\cloud\QuantumMetaCloud-HardAlphaBlend.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\Grass\Billborad.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FunctionNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ColorSpaceDouble.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\3Textures.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SinOpNode.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\Shaders (Mobile)\CFXM_MobileParticleAdd_Alpha8.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\Shaders\CFX3 Invert.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_BlendNormalsNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\TextureArray\TextureArray.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PosterizeNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LODFadeNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Textures\README Textures.txt" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Particles\ParticleAddSoft.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyMobile.cginc" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Shaders\Builtin\Particle Add.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Crosshatch.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_EncodeViewNormalStereoHlpNode.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Forward\MKToonForward.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CosOpNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifySF.cginc" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_NewCellShading.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Effects\Shaders\StylizedWater_Particle_Mobile.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Ultra Fast Mode v1.cginc" />
+     <None Include="Assets\3DScene\Model\BigMap\cloud\QuantumMetaCloud-SoftAlphaBlend.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\2Textures\Specular.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\3Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_BlendOpsNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ScaleNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ATanOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleContrastNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\3Textures\Bumped.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DeltaTime.shader" />
+     <None Include="Assets\3DScene\Shader\StaticBakeObj_backup.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Specialized\Mali 400\Surface\3Textures\Diffuse.shader" />
+     <None Include="Assets\VFX\Hovl Studio\8 KI levels\Shaders\Add_CenterGlow.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_AlphaEdgeBleed_Mul.shader" />
+     <None Include="Assets\Resources\TileWorldCreator\changelog.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\8Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NoiseGeneratorNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_AbsOpNode.shader" />
+     <None Include="Assets\3DScene\Shader\Bigmap_items_GPUI.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Legacy\ED_AlphaSimple_GPUI.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model Test Support 128 Block Instructions.shader" />
+     <None Include="Assets\3rd\Editor Default Resources\nu Assets\Shared\Shaders\CanvasOpaque.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_ShockWaveManual.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SummedBlendNode.shader" />
+     <None Include="Assets\3rd\UHUDText\Documentation\ReadMe.txt" />
+     <None Include="Assets\BuildSource\ModelCharacters\角色预设说明.txt" />
+     <None Include="Assets\3D\Jyx2RoleModels\Shader\Character.shader" />
+     <None Include="Assets\VFX\Hovl Studio\8 KI levels\Demo scene\HDRP and URP.txt" />
+     <None Include="Assets\3rd\ProCore\ProGrids\About\changelog.txt" />
+     <None Include="Assets\VFX\Hovl Studio\Epic toon VFX 2\Demo scene\HDRP and URP(LWRP).txt" />
+     <None Include="Assets\3DScene\Shader\Cutout_Outline_GPUI.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Unlit\2 Textures_baked_lightmap.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TextureArrayNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceLightDirHlpNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Blur_Radial.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Shaders\ConverterSplitPreview_Builtin.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Common\MKToonInc.cginc" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Comics.shader" />
+     <None Include="Assets\3rd\QuickOutline\Resources\Shaders\OutlineFill.shader" />
+     <None Include="Assets\VFX\JMO Assets\!JMO Assets Readme.txt" />
+     <None Include="Assets\3DScene\StylizedWater\Effects\Shaders\StylizedWater_Particle_Desktop.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SinhOpNode.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\SSD\Legacy\Masking\MaskStdMetallic.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Forward\MKToonForwardIO.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\4Textures\Diffuse.shader" />
+     <None Include="Assets\3DScene\Shader\Character.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\7Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\DefaultUnlit.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Epic toon VFX 3\Demo scene\Readme.txt" />
+     <None Include="Assets\VFX\Toon_Explosion_V1\Documentation\03 - HTExplosion.cs parameters.txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\7Textures\Bumped.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\EDSandardVACutoff.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyDoF.cginc" />
+     <None Include="Assets\3DScene\Shader\StaticBakeObj_GPUI.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldReflectionVector.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Demo scenes\Demo AOE skills\HDRP and URP(LWRP).txt" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\4Textures\VertexColored.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleAddOpNode.shader" />
+     <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Log10OpNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\Diffuse-Fog.shader" />
+     <None Include="Assets\VFX\Hovl Studio\RPG VFX Bundle\Scripts\Readme.txt" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Anomaly.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Fog_Smoke.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_OneMinusNode.shader" />
+     <None Include="Assets\3rd\EModules\Fast Water Model 2.0\Scripts\Shaders\EModules Water Model 2.0 uniform.cginc" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Drawing_Paper.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ToggleSwitchNode.shader" />
+     <None Include="Assets\XLua\CHANGELOG.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CeilOpNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Exp2OpNode.shader" />
+     <None Include="Assets\3DScene\StylizedWater\Shaders\StylizedWater_Mobile_GPUI.shader" />
+     <None Include="Assets\VFX\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_WaterWiggle.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Black mage spells\Shaders\ShockWave.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Specialized\Mali 400\Surface\4Textures\Diffuse.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceViewDirHlpNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Demos\DemoSources\Skybox\README_SKYBOX.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_IntNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Sprites-Default.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RGBToHSVNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_3D_Snow.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeFloatRGHlpNode.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\simpleRefraction.shader" />
+     <None Include="Assets\Resources\TileWorldCreator\_Demoscenes\Maps\map_sandisland.xml" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyBasic.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TemplateShaderProperty.shader" />
+     <None Include="Assets\Resources\TileWorldCreator\_Demoscenes\Maps\map_prototype.xml" />
+     <None Include="Assets\XLua\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldNormalVector.shader" />
+     <None Include="Assets\3DScene\Model\BigMap\cloud\QuantumMetaCloud-AlphaClip_GPUI.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_BreakToComponentsNode.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Forward\MKToonForwardAddSetup.cginc" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SubstanceSamplerNode.shader" />
+     <None Include="Assets\3rd\EasyTouchBundle\EasyTouch\RealseNotes.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PannerNode.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_AAA_BloodOnScreen.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyACESFitted.cginc" />
+     <None Include="Assets\3DScene\Post_Processing\Beautify\Resources\Shaders\BeautifyMobile.shader" />
+     <None Include="Assets\3DScene\Post_Processing\Camera Filter Pack\Resources\CameraFilterPack_Distortion_ShockWave.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\TextureArray.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\Packed\NamingConvention.txt" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleRemainderNode.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\DisplayNormal.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Shaders\Explosion.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Standard\5Textures\Bumped-NoFog.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PiNode.shader" />
+     <None Include="Assets\3rd\AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DynamicAppendNode.shader" />
+     <None Include="Assets\VFX\Hovl Studio\Sword slash VFX\Shaders\SwordSlash.shader" />
+     <None Include="Assets\3rd\nu Assets\Easy Decal\Shader\Unlit\EDAlpha.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\EditorResources\Shaders\PaintTexturePreview_Builtin.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Common\MKToonDef.cginc" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\Builtin\Surface\5Textures\DisplayNormal.shader" />
+     <None Include="Assets\VFX\EffectsPackage\EffectPackage\ArtData\Effects\Effect_Shaders\Particle AddSmooth_RT.shader" />
+     <None Include="Assets\3rd\MeshTerrainEditor\Shaders\URP\4Textures_height_blend_packed.shader" />
+     <None Include="Assets\3rd\_MK\MKToonFree\Shader\Inc\Forward\MKToonForwardBaseSetup.cginc" />
+    <Reference Include="UnityEngine">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudFoundationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CloudFoundationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.sharp-zip-lib@a82316d2ab\Runtime\Unity.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Excel\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Runtime\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Runtime\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Decal">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Easy Decal\Scripts\ch.sycoforge.Decal.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Logging">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\ch.sycoforge.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Facepunch.Steamworks.2.3.2\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="IFix.Core">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\IFix.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Unity.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\ch.sycoforge.Unity.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Excel\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AssetBundleBrowser.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.AssetBundleBrowser.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.quicksearch">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\com.unity.quicksearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Analytics">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib.Utils">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.SharpZipLib.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleFileBrowser.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\SimpleFileBrowser.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{2733ad31-b9d9-5da3-9511-9d168bd0bdc2}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="MTE_script.csproj">
+      <Project>{5d919b4b-5b2c-484f-d43d-5866381d2476}</Project>
+      <Name>MTE_script</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
+      <Project>{793cf723-b0a3-4f0c-6f4a-ef30be199157}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.FSM.csproj">
+      <Project>{ff2fee95-49de-e2a0-884b-24a9bb5a22ac}</Project>
+      <Name>Animancer.FSM</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{116b768d-0345-2c1f-3e16-f3c45f617cf2}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.csproj">
+      <Project>{8d5665b0-bdb9-a746-e820-186762f441d5}</Project>
+      <Name>Animancer</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNodeEditor.csproj">
+      <Project>{9699fb2c-2ada-11db-daec-4d87b508b0c6}</Project>
+      <Name>XNodeEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{f38d1597-9f18-b8c3-a4d5-51921b348bf8}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{a2e7720a-d2e3-6571-17b7-c1320d1a900b}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{5872f838-ede7-2e6e-3ccc-51228063ef7a}</Project>
+      <Name>LeanCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{08f43b62-91bb-7a62-1ecb-1c9a864f9b56}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.Examples.csproj">
+      <Project>{5a90fce1-c31a-d8ee-6854-29cad22bd01b}</Project>
+      <Name>Animancer.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
+      <Project>{fa7db092-9cd0-aed2-10b4-2ea3ec235375}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UIWidgets.csproj">
+      <Project>{9c3cfdf0-0437-8bdc-e15b-411acd5e3814}</Project>
+      <Name>UIWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{e4133150-d738-f3d7-8ca5-4363434f33e1}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{588b2e92-ce03-751a-0082-81512b04eb9a}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNode.csproj">
+      <Project>{3fd5232f-3cf9-6abd-ca0d-55fb458bf78f}</Project>
+      <Name>XNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{8c2dd865-d14c-0778-28bf-21be30814f03}</Project>
+      <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanPool.csproj">
+      <Project>{98f5352d-1216-dda7-2d6d-d52b64c1322e}</Project>
+      <Name>LeanPool</Name>
+    </ProjectReference>
+    <ProjectReference Include="Auxiliary.csproj">
+      <Project>{3f269231-ae0d-7844-0f06-154c92e14509}</Project>
+      <Name>Auxiliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{f6060e3b-4355-7338-f087-c4ec5cc4a99d}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

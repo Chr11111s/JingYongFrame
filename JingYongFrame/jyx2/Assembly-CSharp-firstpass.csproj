@@ -1,0 +1,1427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2733ad31-b9d9-5da3-9511-9d168bd0bdc2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_32;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_CLOUD_FEATURES;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;UNITY_POST_PROCESSING_STACK_V2;AMPLIFY_SHADER_EDITOR;ODIN_INSPECTOR;GAIA_PRESENT;ODIN_INSPECTOR_3;GPU_INSTANCER;STEAMWORKS_NET;HOTFIX_ENABLE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;HSFRAMEWORK_NET_ABOVE_4_5;UNITASK_ADDRESSABLE_SUPPORT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Dialog\TestDialogWithDifferentButtons.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_CollisionModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\ChatLineComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ColorPicker\TestColorPicker.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Tabs\TestTabsCreate.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewWithInputFields\LVInputFieldsItem.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Readers\ES3XMLReader.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SkinnedMeshRenderer.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\SwingIt.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\IOrderLine.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Text.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3FileStream.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewImages\ListViewImagesItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\HarborShop\HarborListView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_CapsuleCollider.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewIcons\TileViewIconsDragSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\HarborShop\HarborOrder.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3StackType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\ComboboxDisableDefaultInput.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_GameObject.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\SimpleTileView\SimpleTileView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewButtons\ListViewButtonNavigation.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\ScheduleView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3IO.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SteamSpyData.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\EdgeDetect_AfterStack.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Crypto.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\ChatLineIncoming.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackDataDialog.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSampleItem.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3HashSetType.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_char.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TestTreeView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\ItemDrag.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_MinMaxGradient.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewUnderlineSample\ListViewUnderlineSampleItemDescription.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestListViewPerformance.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3Property.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_ES3Ref.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Tooltip\TutorialsTooltips.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3XMLWriter.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\HierarchyView\HierarchyViewDropSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\Simple\SimpleGroupedComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Image.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_MainModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TasksView\TaskTests.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewResizeHelper.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSampleDataCountry.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_AudioClip.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\Simple\SimpleGroupedListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewVariableHeight\ListViewVariableHeight.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ColorBySpeedModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewVariableWidth\ListViewVariableWidthComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\MultipleDefaultItems\ITreeViewSampleMultipleComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestTimePicker.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\ItemDrop.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Matrix4x4.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackData.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewFilter\TileViewFilter.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_bool.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackDialog.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedComponentType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewSampleDropSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewListeners.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewIcons\TileViewIcons.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Auto Save\ES3AutoSaveMgr.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewUnderlineSample\ListViewUnderlineSampleComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedObjectType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListViewSelect.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestDateTimePicker.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_double.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\DataChange\TestTable.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackDataForm.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\DoubleCarouselSample.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\DataStorage\UserDataStore_PlayerPrefs.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Integration\UnityUI\PlayerPointerEventData.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\MultipleDefaultItems\GroupMultipleComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\SwitchTest.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Attributes\ES3Attributes.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\SharedTemplates\TestListViewSharedTemplates.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Color.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Rigidbody.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector2.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestListViewIconsThread.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewUnderlineSample\ListViewUnderlineSample.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_decimal.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SizeOverLifetimeModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\IOrder.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewEnum\TestEnumObsolete.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\SimpleTileView\SimpleTileViewComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TasksView\TaskPicker.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3ScriptableObjectType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableRow.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3ResourcesStream.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector2Int.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Dialog\DialogTreeViewInputHelper.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Spinner\TestSpinner.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SteamSpyView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_GradientAlphaKey.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ColorPicker\TestColorPickerRange.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\LayoutSwitcher\TestLayoutSwitcher.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_TrailModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector4.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\NestedListView\NestedListViewItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\ResultOrderLine.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\PlayMaker\ES3PlayMaker.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_byteArray.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Transform.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Integration\UnityUI\RewiredEventSystem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestDayRangeSource.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Accordion\AccordionTestItems.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\TestComboboxIcons.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestPaginator.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderListView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_UIntPtr.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ExternalForcesModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\KeyValueAutocomplete.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewVariableHeight\ListViewVariableHeightComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Mesh.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Notify\TestNotify.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\ComboboxChangesEvent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSampleItemCountry.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RotationBySpeedModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Dialog\DialogInputHelper.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\RangeSliderSample.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3InspectorInfo.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\HarborShop\HarborShop.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_BoxCollider.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\IGroupedListItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\DataChange\Data.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SteamSpyItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\RangeSliderAudioTrack.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewImages\ListViewImagesComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\KeyValueListViewItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Progressbar\TestProgressbarIndeterminate.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewDeselect.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Readers\ES3Reader.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSampleItemContinent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewAutoResize\TestListViewAutoResize.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3File.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_enum.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ItemResize\ListViewSelectedItemResize.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Resizable\SplitterSlider.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewSlider\ListViewSliderComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Reflection.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewVariableHeight\ListViewVariableHeightItemDescription.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\GroupedTileView\GroupedPhotos.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_int.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\NestedListView\NestedListViewComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\MultipleDefaultItems\TreeViewMultipleDefaultItems.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewIcons\TileViewIconsTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Lightbox\TestLightbox.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Settings\ES3Settings.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SpriteRenderer.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\Item.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\IO\TestFileDialog.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RotationOverLifetimeModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSample.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewSlider\ListViewSlider.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_float.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderTreeViewComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewCheckboxes\TreeViewCheckboxes.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\HierarchyView\HierarchyViewNodeDragSupport.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RenderTexture.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Keyframe.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\Prices.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\StandaloneExit.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_GradientColorKey.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewCustomSample\ListViewCustomSampleItemDescription.cs" />
+     <Compile Include="Assets\Plugins\3rd\Reporter\ReporterMessageReceiver.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\MultipleDefaultItems\TreeViewSampleComponentCountry.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\HarborShop\HarborOrderLine.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedItems.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackDataView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewWithInputFields\LVInputFieldsComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\InventoryController.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Misc\ExternalTools.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_PhysicsMaterial2D.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3DictionaryType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewCheckboxes\TestTreeViewCheckboxes.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_MeshCollider.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\Simple\SimpleGroupedList.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewList.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Picker\PickerIntTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\MultipleDefaultItems\TreeViewSampleComponentMultiple.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Autocomplete\AutocompleteTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\UITestSamples.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewCheckboxes\TreeViewCheckboxesComponent.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableList\TableList.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TasksView\TaskComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Notify\TestNotifyButton.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\CircularSlider\TestCircularSlider.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector3Int.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_TextureSheetAnimationModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestListViewSlider.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleUtils.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\SimpleTileView\SimpleTileViewItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\TestGroupedListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewIconsExt\ListViewIconsItemComponentExt.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\InputFieldDragSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\HierarchyView\HierarchyViewNodeDropSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Groupable\TestGroupable.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3ReferenceMgr.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\CountryFlag.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderTreeViewNodeDropSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SteamSpyComponent.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Scripts\Decal.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\SmokeTest.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\InputManager.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Color32.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Spinner\TestSpinnerFloat.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Quaternion.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES33DArrayType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableRowComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestMultipleDefaultItems.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Autocomplete\AutocompleteIconsHelper.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Accordion\AccordionTestToggle.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewToggle\TreeViewToggleComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SimpleTable\SimpleTableComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\PlaylistDialogHelper.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Gradient.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_string.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3BinaryWriter.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Progressbar\SampleProgressbar.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\PopupTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewSaveIndices.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\RangeSliderFloatSample.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\InputFieldDragSupportBase.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_MinMaxCurve.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_TriggerModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Bounds.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_LayerMask.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestCanvasMode.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Integration\UnityUI\RewiredPointerInputModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_EmissionModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Accordion\AccordionArrowAnimation.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\HarborShop\HarborListViewComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Tabs\TestTabsEvents.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\EdgeDetect_BeforeStack.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewComponentSample.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedValueType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\TestCombobox.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewEnum\TestListViewEnum.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3ArrayType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\IGroupedListViewComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewVariableWidth\ListViewVariableWidth.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSampleComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_LimitVelocityOverLifetimeModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TestTileViewList.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Scripts\DecaliciousRenderer.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_NoiseModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_ParticleSystem.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\DoubleCarouselCustomizedSlide.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestScrollRectEvents.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\IInteract.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Font.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\ItemDragData.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ColorOverLifetimeModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\JRPGOrderLine.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3CacheWriter.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackDataDragSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\ChatViewTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Progressbar\TestProgressbarDeterminate.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3PlayerPrefsStream.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\IO\TestFolderDialog.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\KeyValueListViewDataSource.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\DoubleCarouselCustomized.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\InventoryTooltip.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Texture2D.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\ShootDecal.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderTreeView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableList\TableListCell.cs" />
+     <Compile Include="Assets\Plugins\3rd\Reporter\Reporter.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ToDoList\ToDoListViewComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableList\TableListTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\Simple\SimpleGroupedItem.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3Binary.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Progressbar\SampleProgressBar1.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\ChangeDecal.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewDataFromHierarchy.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Progressbar\SampleProgressBar2.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Spinner\SpinnerString.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Customization\CustomListViewIconsComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Autocomplete\AutocompleteRemote.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3CollectionType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\DoubleCarousel{T}.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewSample.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\ComboboxAutocompleteCopyData.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3ComponentType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\KeyValueCombobox.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewSampleDragSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\IChatLineComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3Stream.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\Item.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Texture.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_ulong.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_byte.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewWithInputFields\LVInputFieldsTest.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\WidgetGeneration\DataItem.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\NET Types\ES3Type_Random.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\JRPGOrder.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewLoading.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\SinMove.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewToggleDirection.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Tooltip\TestTooltip.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Material.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewIconsWithFilter.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3QueueType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SimpleTable\SimpleTableTest.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES32DArrayType.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Auto Save\ES3AutoSave.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewVariableWidth\ListViewVariableWidthItemDescription.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\TestDoubleCarousel.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\CenteredSliderLabel.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\Terrain\DragGameObject2Terrain.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_sbyte.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3Writer.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Tabs\TestTabsIcons.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestCalendarDayRange.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_LightsModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TestScheduleView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\InputFieldDropSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewButtons\ListViewButtonsComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\MultipleDefaultItems\TreeViewSampleComponentContinent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Settings\ES3DefaultSettings.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_BoneWeight.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SimpleTable\SimpleTable.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ShapeModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector3.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Time\TestTimeAnalog.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Accordion\TestAccordionContent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\ItemView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_uint.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewButtons\ListViewButtonsItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewCheckbox\ListViewIconsToggleComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewReorder.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewCheckboxes\TreeViewCheckboxesItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestDate.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Sprite.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_AnimationCurve.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\GroupedTileView\Photo.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedUnityObjectType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ContextMenu\TestContextMenu.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_BoxCollider2D.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_MeshFilter.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Flare.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_short.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\LocalizationSampleListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\MultipleDefaultItems\GroupMultipleListView.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewImages\ListViewImages.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedScriptableObjectType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TestTreeViewTag.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_PhysicMaterial.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\Trader.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Settings\ES3Defaults.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\Table.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\ChatLineOutgoing.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\NestedListView\NestedListView.cs" />
+     <Compile Include="Assets\Plugins\3rd\Reporter\ReporterGUI.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Accordion\AccordionArrow.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\TimeRangeSlider\TestTimeRangeSlider.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewIcons\TileViewIconsDataSource.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_SphereCollider.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_RawImage.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListGroup.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewDefaultItemChange.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestListViewIcons.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestDateScroller.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_MeshRenderer.cs" />
+     <Compile Include="Assets\Plugins\3rd\Reporter\MultiKeyDictionary.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewItemSample.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\Simple\TestSimpleGroupedListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewComponentDoubleClick.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewIconsExt\ListViewIconsExt.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_ushort.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\SimpleTable\SimpleTableItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\CustomColoring\ListViewComponentCustomColoring.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewIconsExt\ListViewIconsItemDescriptionExt.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RectTransform.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackLayoutByName.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\HorizontalSelector\HorizontalSelector.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Draggable\TestDraggableTarget.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\KeyValueListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListViewComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3ListType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListViewComponentItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Picker\TestPickerBool.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3UnityObjectType.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3TypeMgr.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\ChatView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TasksView\TaskView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\RangleSliderLabel.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListItem.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SizeBySpeedModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableCell.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\JRPGShop.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Web\ES3Cloud.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\GroupedListViewComponentGroup.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Referencing\ES3GlobalReferences.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\EdgeDetect_BeforeTransparent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestScene2.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\ControllerTemplates\ControllerTemplates.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewDoubleClick.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewCreateFromScript.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\Chat\ChatLine.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewSampleData.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderListViewDragSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\SceneVersionNumber.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\LocalizationSample.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\GroupedTileView\TestGroupedTileView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewCustomSample\ListViewCustomSample.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Camera.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\HierarchyView\HierarchyView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_InheritVelocityModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\InputFieldDragSwapSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\HierarchyView\HierarchyItemView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_VelocityOverLifetimeModule.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TestTrader.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Prefab.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Combobox\ComboboxChanges.cs" />
+     <Compile Include="Assets\Plugins\Decalicious\Example\Scripts\PickupWeapon.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderListViewComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_PolygonCollider2D.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewDataFromHierarchy.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Inventory\InventoryView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackForm.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\TimeRangeSlider\TimeRangeSliderEvent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\Terrain\DragTerrainHelper.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ForceOverLifetimeModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Rect.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SubEmittersModule.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_long.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewSlider\ListViewSliderItem.cs" />
+     <Compile Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\EdgeDetectPostProcessing.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3Type.cs" />
+     <Compile Include="Assets\Plugins\Rewired\Internal\Scripts\Platforms\Ouya\OuyaInputSource.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Debugging\ES3Debug.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\DataChange\Table.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestListView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_DateTime.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\TableList\TableListComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3JSONWriter.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestDirectoryTreeView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TestListViewVariableHeight.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewButtons\ListViewButtons.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TasksView\Task.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewCustomSample\ListViewCustomSampleComponent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Drag-and-Drop\Terrain\DropGameObject2Terrain.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\ListViewWithInputFields\LVInputFields.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Accordion\AccordionTestTemplates.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewSampleDataSource.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\RangeSlider\TimeRangeSlider\TimeRangeSlider.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestMobile.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestCalendar.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\TestScrollRectEventsPull.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ToDoList\ToDoListViewItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Dialog\TestDialogWithCustomContent.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewIcons\TileViewIconsDropSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\GroupedTileView\GroupedTileViewComponent.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Light.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\TreeViewComponentWithClick.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Spreadsheet.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Calendar\TestDatePicker.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\GroupedTileView\GroupedTileView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_EventSystem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Table\DataChange\DataView.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_intptr.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ScrollRectUtilities\DoubleCarousel.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\Shops\JRPGShop\TraderTreeViewNodeDragSupport.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestScripts\TestTabs.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TileView\TileViewIcons\TileViewIconsLayoutWidthExtender.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeView\ITreeViewSampleItem.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ToDoList\ToDoListView.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TreeGraph\TestTreeGraph.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3ReferenceMgrBase.cs" />
+     <Compile Include="Assets\Plugins\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\TracksView\TrackBackground.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\GroupedListView\MultipleDefaultItems\GroupMultipleItem.cs" />
+     <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3ObjectType.cs" />
+     <Compile Include="Assets\Plugins\New UI Widgets.Editor\Examples\ListView\TasksView\TaskAutocomplete.cs" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Plugins\DOTween\readme.txt" />
+     <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Facepunch.Steamworks.2.3.2\Facepunch.Steamworks.Posix.xml" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Plugins\Decalicious\Example\README.txt" />
+     <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestData\TileViewListData.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.xml" />
+     <None Include="Assets\Plugins\Decalicious\Shader\DecaliciousDeferredDecal.shader" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.xml" />
+     <None Include="Assets\Plugins\Rewired\Documentation\ReleaseNotes.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Fonts\zh-cn_Commonly_used.txt" />
+     <None Include="Assets\Plugins\Rewired\Documentation\ReadMe.txt" />
+     <None Include="Assets\Plugins\New UI Widgets.Editor\Examples\TestData\classes.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\Plugins\Rewired\Documentation\licences.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\Plugins\Easy Save 3\Change Log\Change Log.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\Plugins\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Plugins\Sirenix\Readme.txt" />
+     <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.xml" />
+     <None Include="Assets\Plugins\Facepunch.Steamworks.2.3.2\Facepunch.Steamworks.Win64.xml" />
+     <None Include="Assets\Plugins\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.xml" />
+     <None Include="Assets\Plugins\Facepunch.Steamworks.2.3.2\Facepunch.Steamworks.Win32.xml" />
+     <None Include="Assets\Plugins\Sirenix\Assemblies\link.xml" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\Plugins\EdgeDetect-PostProcessingUnity\Resources\EdgeDetectNormalsPostProcess.shader" />
+     <None Include="Assets\Plugins\Decalicious\Shader\DecaliciousCommon.cginc" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Plugins\Decalicious\Shader\DecaliciousUnlitDecal.shader" />
+     <None Include="Assets\Plugins\Decalicious\Resources\DecaliciousGameObjectID.shader" />
+     <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <Reference Include="UnityEngine">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudFoundationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CloudFoundationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.sharp-zip-lib@a82316d2ab\Runtime\Unity.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Excel\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Runtime\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Rewired\Internal\Libraries\Runtime\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Decal">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Easy Decal\Scripts\ch.sycoforge.Decal.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Logging">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\ch.sycoforge.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Facepunch.Steamworks.2.3.2\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="IFix.Core">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\IFix.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ch.sycoforge.Unity.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\3rd\nu Assets\Shared\Scripts\ch.sycoforge.Unity.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\Excel\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+        <HintPath>E:\Desktop\jynew\jyx2\Assets\Plugins\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+        <HintPath>F:\Unity 2023.1.16f1c1\2020.3.32f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AssetBundleBrowser.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.AssetBundleBrowser.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.quicksearch">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\com.unity.quicksearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Analytics">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib.Utils">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.SharpZipLib.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleFileBrowser.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\SimpleFileBrowser.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+        <HintPath>E:\Desktop\jynew\jyx2\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MTE_script.csproj">
+      <Project>{5d919b4b-5b2c-484f-d43d-5866381d2476}</Project>
+      <Name>MTE_script</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
+      <Project>{793cf723-b0a3-4f0c-6f4a-ef30be199157}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.FSM.csproj">
+      <Project>{ff2fee95-49de-e2a0-884b-24a9bb5a22ac}</Project>
+      <Name>Animancer.FSM</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{116b768d-0345-2c1f-3e16-f3c45f617cf2}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.csproj">
+      <Project>{8d5665b0-bdb9-a746-e820-186762f441d5}</Project>
+      <Name>Animancer</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNodeEditor.csproj">
+      <Project>{9699fb2c-2ada-11db-daec-4d87b508b0c6}</Project>
+      <Name>XNodeEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{f38d1597-9f18-b8c3-a4d5-51921b348bf8}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{a2e7720a-d2e3-6571-17b7-c1320d1a900b}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{5872f838-ede7-2e6e-3ccc-51228063ef7a}</Project>
+      <Name>LeanCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{08f43b62-91bb-7a62-1ecb-1c9a864f9b56}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Animancer.Examples.csproj">
+      <Project>{5a90fce1-c31a-d8ee-6854-29cad22bd01b}</Project>
+      <Name>Animancer.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
+      <Project>{fa7db092-9cd0-aed2-10b4-2ea3ec235375}</Project>
+      <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UIWidgets.csproj">
+      <Project>{9c3cfdf0-0437-8bdc-e15b-411acd5e3814}</Project>
+      <Name>UIWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{e4133150-d738-f3d7-8ca5-4363434f33e1}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{588b2e92-ce03-751a-0082-81512b04eb9a}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="XNode.csproj">
+      <Project>{3fd5232f-3cf9-6abd-ca0d-55fb458bf78f}</Project>
+      <Name>XNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{8c2dd865-d14c-0778-28bf-21be30814f03}</Project>
+      <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanPool.csproj">
+      <Project>{98f5352d-1216-dda7-2d6d-d52b64c1322e}</Project>
+      <Name>LeanPool</Name>
+    </ProjectReference>
+    <ProjectReference Include="Auxiliary.csproj">
+      <Project>{3f269231-ae0d-7844-0f06-154c92e14509}</Project>
+      <Name>Auxiliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{f6060e3b-4355-7338-f087-c4ec5cc4a99d}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
